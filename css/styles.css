@@ -726,6 +726,13 @@ footer {
     fill: #4D5AE5;
 }
 
+.span-svg {
+width: 10px;
+height: 8px;
+stroke-width: 1px;
+fill: rgba(244, 244, 253, 1);
+}
+
 .input-modal-comment {
     margin-bottom: 16px;
 }
@@ -755,11 +762,22 @@ footer {
     margin-bottom: 24px;
 }
 
+.check-box:checked+.label-modal .label-modal-span {
+    background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;}
+
+/* .modal-checkbox-input {} */
+
 .label-modal {
+    font-family: Roboto;
+    font-style: normal;
     font-size: 12px;
+    font-weight: 400;
     line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: #8e8f99;
+    /* letter-spacing: 0.04em; */
+    letter-spacing: 0.48px;
+    color: #8e8f99;      
 }
 
 .label-modal-span {
@@ -767,11 +785,14 @@ footer {
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
+    background-color: rgba(244, 244, 253, 1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: inline-flex;
     align-items: center;
     justify-content: center;
     fill: transparent;
+    margin-right: 8px;
+    outline: transparent;
 }
 
 .link-label-priv:checked {
@@ -784,23 +805,38 @@ footer {
 
 .link-label-priv {
     color: #4d5ae5;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.48px;
+    text-decoration-line: underline;
+    text-transform: capitalize;
 }
 
 .label-btn {
-    font-family: "Roboto", sans-serif;
-    display: block;
-    min-width: 169px;
-    height: 56px;
+    color: #FFF;
+    font-family: Roboto, sans-serif;
     font-size: 16px;
+    font-style: normal;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: #ffffff;
-    cursor: pointer;
+    letter-spacing: 0.64px;
     background-color: #4D5AE5;
-    border: none;
+    display: block;
+    padding: 16px 32px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    min-width: 169px;
+    margin: 24px auto 0;
+    cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.label-btn:hover,
+.label-btn:focus {
+    background-color: #404BBF;}
 
 /* .span-svg {} */
 /* #endregion Modal Window */
