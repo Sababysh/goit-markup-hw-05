@@ -751,9 +751,9 @@ footer {
     border-color: #4D5AE5;
 }
 
-/* .check-box {
+.check-box {
     margin-bottom: 24px;
-} */
+}
 
 .label-modal {
     font-size: 12px;
@@ -774,11 +774,13 @@ footer {
     fill: transparent;
 }
 
-.label-modal-span:checked {
+.link-label-priv:checked {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
 }
+
+/* .label-modal-span */
 
 .link-label-priv {
     color: #4d5ae5;
