@@ -78,6 +78,7 @@ footer {
     color: #4d5ae5;
     margin-right: 76px;
     position: relative;
+    display: inline-block;
 }
         
 .logo-black {
@@ -88,6 +89,10 @@ footer {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #2E2F42;
+}
+
+.logo-white {
+    color: #f4f4fd;
 }
 
 .header-nav-list {
@@ -511,6 +516,7 @@ footer {
 .footer-text {
     color: #F4F4FD;
     max-width: 264px;
+    line-height: 1.5;
 }
 
 .footer-socials {
